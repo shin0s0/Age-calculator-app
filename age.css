@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: hsl(0, 0%, 86%);
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.center{
+    min-height:60%;
+    width:50%;
+    background-color:hsl(0, 0%, 100%) ;
+    border-radius: 30px;
+    border-bottom-right-radius: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+}
+.top{
+    display: flex;
+    margin:50px  150px 50px 50px;
+}
+
+.top div{
+    display: flex;
+    flex-direction: column;  
+}
+label{
+    font-weight: normal;
+    color:hsl(0, 1%, 44%);
+}
+input{
+    margin:10px 0 5px 0;
+    padding-left: 15px;
+    min-height:50px;
+    width:80%;
+    cursor: pointer;
+    border: 1px solid hsl(0, 0%, 86%);
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.top p{
+    font-size: 14px;
+    font-weight: normal;
+}
+hr{
+    margin-top: 10px;
+    color: hsl(0, 0%, 86%);
+    position: fixed; 
+    top: 35%; 
+    left: 28%;
+    width: 40%; 
+    transform: translateY(-50%);
+}
+button{
+    background-image: url('/images/icon-arrow.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: hsl(259, 100%, 65%);
+    width:90px;
+    height:90px;
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    top: 33%;
+    right: 0;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+button:hover{
+    background-color:hsl(0, 0%, 8%) ;
+}
+.result{
+    margin:40px;
+}
+.result p{
+    font-size: 75px;
+    color:  hsl(0, 0%, 8%);
+
+}
+.result span{
+    color:hsl(259, 100%, 65%);
+
+}
+
+@media screen and (max-width: 720px) {
+   
+    .center {    
+      width: 80%;
+      padding: 20px;
+      height:70vh;
+    }
+    .top {
+      margin: 0 10px 0;
+    }
+  
+    .top div {
+      margin-bottom: 20px;
+    }
+    label{
+        font-size: 16px;
+    }
+    .top p{
+        font-size: 10px;
+    }
+    input {
+      width: 80%;
+      min-height:50%;
+      font-size: 16px;
+    }
+  
+    hr {
+      margin: 20px 10px 0;
+      top:42%;
+      left:15%;
+      width:60%;
+    }
+  
+    button {
+      height:60px;
+      width:60px;
+      top: 50%;
+      right: 50%;
+      transform: translate(50%, -100%);
+    }
+    .result{
+        margin:50px 10px 0;
+    }
+    .result p {
+      font-size: 35px;
+    }
+  }
+
+  

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="age.css">
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+    <title>Age Calculator</title>
+</head>
+<body>
+<div class="container">
+<div class="center">
+<div class="top">
+<div><label for="bDay">DAY</label>
+<input type="text" id="bDay" placeholder="DD" />
+<p id="errDay" class="error"></p>
+</div>
+<div>
+<label for="bMonth">MONTH</label>
+<input type="text" id="bMonth" placeholder="MM" />
+<p id="errMonth" class="error"></p>
+</div>
+<div>
+<label for="bYear">YEAR</label>
+<input type="text" id="bYear" placeholder="YYYY" />
+<p id="errYear" class="error"></p>
+</div>
+</div>
+<hr>
+<button id="calBtn"></button>
+<div class="result">
+<p><span id="resY">--</span> years</p>
+<p><span id="resM">--</span> months</p>
+<p><span id="resD">--</span> days</p>
+</div>
+
+</div>
+</div>
+</body>
+<script src="age.js"></script>
+</html>
